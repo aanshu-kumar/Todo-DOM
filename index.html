@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo List</title>
+    <link href="./style.css" rel="Stylesheet" />
+  </head>
+  <body>
+    <h1>Todo List</h1>
+    <div class="input">
+      <input id="item-name" type="text" placeholder="Item Name" required/>
+      <input id="date" placeholder="Deadline" class="date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" required/>
+      <select id="priority" required>
+        <option disabled selected>Priority</option>
+                <option value="high">High</option>
+                <option value="medium">Medium</option>
+                <option value="low">Low</option>
+      </select>
+      <button id="add-item">Add Item</button>
+    </div>
+    <h2>Today’s TodoList</h2>
+    <div id="today"></div>
+    <h2>Future TodoList</h2>
+    <div id="future"></div>
+    <h2>Completed TodoList</h2>
+    <div id="Completed"></div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
